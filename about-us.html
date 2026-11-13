@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Department | PMAY-G Official Portal</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Accessibility Bar -->
+  <header class="top-accessibility-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-3">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <span class="text-muted">|</span>
+        <span class="d-none d-sm-inline">Government of India | भारत सरकार</span>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <span class="me-1 d-none d-md-inline">Text Size:</span>
+        <button id="btn-font-decrease" title="Decrease font size" aria-label="Decrease font size">A-</button>
+        <button id="btn-font-reset" title="Normal font size" aria-label="Normal font size">A</button>
+        <button id="btn-font-increase" title="Increase font size" aria-label="Increase font size">A+</button>
+        <span class="text-muted">|</span>
+        <button id="btn-high-contrast" title="Toggle High Contrast" aria-label="High contrast mode">
+          <i class="bi bi-circle-half"></i>
+        </button>
+        <span class="text-muted">|</span>
+        <a href="#" title="English" class="fw-semibold">English</a>
+        <a href="#" title="हिंदी">हिंदी</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Brand Header -->
+  <div class="main-header">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-lg-6 col-md-7 col-12">
+          <div class="d-flex align-items-center">
+            <a href="index.html" class="brand-emblem-wrap">
+              <img src="assets/images/emblem-goi.png" alt="Emblem of India" class="brand-emblem-img">
+              <div class="brand-text-block">
+                <div class="brand-govt-title">Government of India</div>
+                <div class="brand-dept-title">Department of Rural Development</div>
+              </div>
+            </a>
+            <div class="ms-3">
+              <a href="official-home.html">
+                <img src="assets/images/pmayg-logo.png" alt="PMAY-G Logo" class="brand-pmayg-logo">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-md-end justify-content-between align-items-center gap-3">
+          <form class="header-search-form" role="search">
+            <input class="form-control" type="search" placeholder="Search..." aria-label="Search PMAY-G portal">
+            <button class="btn-search" type="submit" aria-label="Submit search">
+              <img src="assets/icons/search.svg" alt="" width="16" height="16">
+            </button>
+          </form>
+
+          <div class="header-utility-icons">
+            <a href="#" class="utility-icon-btn" title="Notifications" aria-label="Notifications"><img src="assets/icons/bell.svg" alt="Bell" width="18"></a>
+            <a href="#" class="utility-icon-btn" title="Language Translation" aria-label="Translate"><img src="assets/icons/translate.svg" alt="Translate" width="18"></a>
+            <a href="#" class="utility-icon-btn" title="Accessibility Options" aria-label="Accessibility"><img src="assets/icons/accessibility.svg" alt="Accessibility" width="18"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Navbar -->
+  <nav class="navbar navbar-expand-lg pmayg-navbar sticky-top">
+    <div class="container">
+      <button class="navbar-toggler text-white my-2 border-white" type="button" data-bs-toggle="collapse" data-bs-target="#officialNav" aria-controls="officialNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="officialNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="official-home.html"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about-us.html">Department</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="stakeholders.html">Stakeholders</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Documents
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="documents-reports.html"><i class="bi bi-bar-chart me-2"></i> Reports</a></li>
+              <li><a class="dropdown-item" href="documents-user-manual.html"><i class="bi bi-book me-2"></i> User Manual</a></li>
+              <li><a class="dropdown-item" href="documents-studies.html"><i class="bi bi-journal-text me-2"></i> Studies</a></li>
+              <li><a class="dropdown-item" href="documents-guidelines.html"><i class="bi bi-file-earmark-ruled me-2"></i> Guidelines</a></li>
+              <li><a class="dropdown-item" href="documents-house-typology.html"><i class="bi bi-building me-2"></i> House Typology</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Media
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="media-photos.html"><i class="bi bi-images me-2"></i> Photos</a></li>
+              <li><a class="dropdown-item" href="media-publications.html"><i class="bi bi-newspaper me-2"></i> Gaon Vikas Ki Ore</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Connect
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="contact-us.html"><i class="bi bi-telephone me-2"></i> Contact Us</a></li>
+              <li><a class="dropdown-item" href="directory.html"><i class="bi bi-person-lines-fill me-2"></i> Official Directory</a></li>
+              <li><a class="dropdown-item" href="grievance.html"><i class="bi bi-shield-exclamation me-2"></i> Grievance Redressal</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-2">
+          <a href="index.html" class="btn btn-outline-light btn-sm px-3" title="Switch to Gateway">
+            <i class="bi bi-arrow-left-right me-1"></i> Citizen View
+          </a>
+          <button class="btn btn-warning btn-sm fw-semibold px-3" data-bs-toggle="modal" data-bs-target="#officialLoginModal">
+            <i class="bi bi-box-arrow-in-right me-1"></i> Official Login
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Breadcrumb & Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <h1 class="page-banner-title">Department – About Us</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb page-breadcrumb">
+          <li class="breadcrumb-item"><a href="official-home.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Department About Us</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Main Content Layout -->
+  <main id="main-content" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Sidebar Navigation (Topics & Vision) -->
+        <div class="col-lg-3 col-md-4">
+          <!-- Vision Statement Card -->
+          <div class="card mb-4 border-0 shadow-sm bg-primary text-white p-3 rounded-3">
+            <h2 class="h6 fw-bold text-uppercase text-warning mb-2">Vision Statement 2025</h2>
+            <p class="small mb-0 opacity-90">
+              Sustainable and Inclusive growth of Rural India through a multi-pronged strategy for eradication of poverty by increasing livelihood opportunities, providing a social safety net and developing infrastructure for growth.
+            </p>
+          </div>
+
+          <!-- Topics List -->
+          <div class="card border-0 shadow-sm p-3">
+            <h2 class="h6 fw-bold text-dark border-bottom pb-2 mb-3">Topics</h2>
+            <div class="list-group list-group-flush small">
+              <a href="#about-pmayg" class="list-group-item list-group-item-action active fw-semibold rounded-2 mb-1">About PMAY-G</a>
+              <a href="#journey" class="list-group-item list-group-item-action text-primary rounded-2 mb-1">Journey So Far</a>
+              <a href="#benefits" class="list-group-item list-group-item-action text-primary rounded-2 mb-1">Key Benefits</a>
+              <a href="#eligibility" class="list-group-item list-group-item-action text-primary rounded-2 mb-1">Eligibility Criteria</a>
+              <a href="#budget" class="list-group-item list-group-item-action text-primary rounded-2 mb-1">Budget Allocation</a>
+              <a href="#convergence" class="list-group-item list-group-item-action text-primary rounded-2 mb-1">Inter-Scheme Convergence</a>
+              <a href="grievance.html" class="list-group-item list-group-item-action text-primary rounded-2 mb-1">Complaint Procedure</a>
+              <a href="#faqs" class="list-group-item list-group-item-action text-primary rounded-2">Frequently Asked Questions</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Editorial Content Area -->
+        <div class="col-lg-9 col-md-8">
+          <article class="bg-white p-4 p-lg-5 rounded-3 border shadow-sm">
+            <div id="about-pmayg" class="mb-4">
+              <h2 class="h4 fw-bold text-dark mb-3">About Department of Rural Development & PMAY-G</h2>
+              <p class="text-secondary leading-relaxed">
+                Being the nodal Ministry for most of the development and welfare activities in the rural areas, the Ministry of Rural Development plays a pivotal role in the overall development strategy of the country. The vision and mission of the Ministry is sustainable and inclusive growth of rural India through a multipronged strategy for eradication of poverty by increasing livelihoods opportunities, providing a social safety net, and developing infrastructure for growth.
+              </p>
+              <p class="text-secondary leading-relaxed">
+                This is expected to improve quality of life in rural India and to correct developmental imbalances, aiming in the process to reach out to the most disadvantaged sections of society. Under the "Housing for All" charter, Pradhan Mantri Awaas Yojana - Gramin (PMAY-G) provides substantial financial assistance directly to beneficiary bank accounts to construct environmentally sound, disaster-resilient, and culturally appropriate permanent housing.
+              </p>
+            </div>
+
+            <hr class="my-4">
+
+            <!-- Journey So Far -->
+            <div id="journey" class="mb-4">
+              <h3 class="h5 fw-bold text-dark mb-3">Journey So Far & Key Convergence Initiatives</h3>
+              <p class="text-secondary">
+                To realize maximum socio-economic impact, PMAY-G converges with multiple flagship schemes of the Government of India:
+              </p>
+              <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item px-0 py-2 text-secondary d-flex align-items-start gap-2">
+                  <i class="bi bi-check-circle-fill text-success mt-1"></i>
+                  <div><strong>Mahatma Gandhi NREGA (MGNREGA):</strong> Provision of 90/95 person-days of unskilled wage labor to each housing beneficiary.</div>
+                </li>
+                <li class="list-group-item px-0 py-2 text-secondary d-flex align-items-start gap-2">
+                  <i class="bi bi-check-circle-fill text-success mt-1"></i>
+                  <div><strong>Swachh Bharat Mission - Gramin (SBM-G):</strong> Dedicated incentive for constructing clean, functional household sanitary latrines.</div>
+                </li>
+                <li class="list-group-item px-0 py-2 text-secondary d-flex align-items-start gap-2">
+                  <i class="bi bi-check-circle-fill text-success mt-1"></i>
+                  <div><strong>Jal Jeevan Mission (JJM):</strong> Functional Household Tap Connection (FHTC) providing safe drinking water.</div>
+                </li>
+                <li class="list-group-item px-0 py-2 text-secondary d-flex align-items-start gap-2">
+                  <i class="bi bi-check-circle-fill text-success mt-1"></i>
+                  <div><strong>Pradhan Mantri Ujjwala Yojana (PMUY):</strong> Clean LPG cooking gas connection for all new houses.</div>
+                </li>
+                <li class="list-group-item px-0 py-2 text-secondary d-flex align-items-start gap-2">
+                  <i class="bi bi-check-circle-fill text-success mt-1"></i>
+                  <div><strong>Saubhagya / PM Surya Ghar:</strong> Guaranteed electricity connection and solar roof installations.</div>
+                </li>
+              </ul>
+            </div>
+
+            <hr class="my-4">
+
+            <!-- Budget & Governance -->
+            <div id="budget" class="mb-4">
+              <h3 class="h5 fw-bold text-dark mb-3">Program Budget & Direct Benefit Transfer</h3>
+              <p class="text-secondary">
+                The scheme operates under a cost-sharing pattern between the Government of India and State Governments (60:40 in plain areas and 90:10 for North Eastern and Himalayan States; 100% UTs). Total central allocation exceeding ₹3,00,000 Crore has been directly disbursed to beneficiaries through the Public Financial Management System (PFMS) and AwaasSoft, eliminating leakages and intermediaries.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Government Footer -->
+  <footer class="pmayg-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <h3 class="footer-heading">Useful Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="official-home.html"><i class="bi bi-chevron-right text-warning"></i> Official Portal Home</a></li>
+            <li><a href="about-us.html"><i class="bi bi-chevron-right text-warning"></i> About Department</a></li>
+            <li><a href="stakeholders.html"><i class="bi bi-chevron-right text-warning"></i> Government Stakeholders</a></li>
+            <li><a href="documents-guidelines.html"><i class="bi bi-chevron-right text-warning"></i> PMAY-G Guidelines</a></li>
+            <li><a href="documents-reports.html"><i class="bi bi-chevron-right text-warning"></i> Progress & Analytics Reports</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h3 class="footer-heading">Website Policies</h3>
+          <ul class="footer-links-list">
+            <li><a href="#"><i class="bi bi-chevron-right text-warning"></i> Terms & Conditions</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right text-warning"></i> Website Policies</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right text-warning"></i> Accessibility Statement</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right text-warning"></i> Sitemap</a></li>
+            <li><a href="grievance.html"><i class="bi bi-chevron-right text-warning"></i> Grievance Redressal</a></li>
+            <li><a href="contact-us.html"><i class="bi bi-chevron-right text-warning"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h3 class="footer-heading">Connect with Us</h3>
+          <p class="text-secondary small mb-2">Subscribe for scheme updates and notifications.</p>
+          <div class="footer-social-icons">
+            <a href="#" class="footer-social-link" title="Facebook" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="Facebook" width="18"></a>
+            <a href="#" class="footer-social-link" title="YouTube" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="YouTube" width="18"></a>
+            <a href="#" class="footer-social-link" title="X (Twitter)" aria-label="Twitter"><img src="assets/icons/x-twitter.svg" alt="Twitter" width="18"></a>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 mt-4">
+            <img src="assets/images/digital-india.png" alt="Digital India" class="footer-badge-img">
+            <img src="assets/images/nic-logo.png" alt="National Informatics Centre" class="footer-badge-img">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <div>
+          This Website belongs to Department of Rural Development, Ministry of Rural Development, Government of India.
+        </div>
+        <div>
+          Last updated on: 10.07.2026
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

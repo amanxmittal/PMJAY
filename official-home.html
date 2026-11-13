@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMAY-G Official Portal | Pradhan Mantri Awaas Yojana - Gramin</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Accessibility Bar -->
+  <header class="top-accessibility-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-3">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <span class="text-muted">|</span>
+        <span class="d-none d-sm-inline">Government of India | भारत सरकार</span>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <span class="me-1 d-none d-md-inline">Text Size:</span>
+        <button id="btn-font-decrease" title="Decrease font size" aria-label="Decrease font size">A-</button>
+        <button id="btn-font-reset" title="Normal font size" aria-label="Normal font size">A</button>
+        <button id="btn-font-increase" title="Increase font size" aria-label="Increase font size">A+</button>
+        <span class="text-muted">|</span>
+        <button id="btn-high-contrast" title="Toggle High Contrast" aria-label="High contrast mode">
+          <i class="bi bi-circle-half"></i>
+        </button>
+        <span class="text-muted">|</span>
+        <a href="#" title="English" class="fw-semibold">English</a>
+        <a href="#" title="हिंदी">हिंदी</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Brand Header -->
+  <div class="main-header">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <!-- Logo Section -->
+        <div class="col-lg-6 col-md-7 col-12">
+          <div class="d-flex align-items-center">
+            <a href="index.html" class="brand-emblem-wrap">
+              <img src="assets/images/emblem-goi.png" alt="Emblem of India" class="brand-emblem-img">
+              <div class="brand-text-block">
+                <div class="brand-govt-title">Government of India</div>
+                <div class="brand-dept-title">Department of Rural Development</div>
+              </div>
+            </a>
+            <div class="ms-3">
+              <a href="official-home.html">
+                <img src="assets/images/pmayg-logo.png" alt="PMAY-G Logo" class="brand-pmayg-logo">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search Bar & Utilities -->
+        <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-md-end justify-content-between align-items-center gap-3">
+          <form class="header-search-form" role="search">
+            <input class="form-control" type="search" placeholder="Search..." aria-label="Search PMAY-G portal">
+            <button class="btn-search" type="submit" aria-label="Submit search">
+              <img src="assets/icons/search.svg" alt="" width="16" height="16">
+            </button>
+          </form>
+
+          <div class="header-utility-icons">
+            <a href="#" class="utility-icon-btn" title="Notifications" aria-label="Notifications">
+              <img src="assets/icons/bell.svg" alt="Bell" width="18" height="18">
+            </a>
+            <a href="#" class="utility-icon-btn" title="Language Translation" aria-label="Translate">
+              <img src="assets/icons/translate.svg" alt="Translate" width="18" height="18">
+            </a>
+            <a href="#" class="utility-icon-btn" title="Accessibility Options" aria-label="Accessibility">
+              <img src="assets/icons/accessibility.svg" alt="Accessibility" width="18" height="18">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Navbar -->
+  <nav class="navbar navbar-expand-lg pmayg-navbar sticky-top">
+    <div class="container">
+      <button class="navbar-toggler text-white my-2 border-white" type="button" data-bs-toggle="collapse" data-bs-target="#officialNav" aria-controls="officialNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="officialNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="official-home.html"><i class="bi bi-house-door me-1"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">Department</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="stakeholders.html">Stakeholders</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Documents
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="documents-reports.html"><i class="bi bi-bar-chart me-2"></i> Reports</a></li>
+              <li><a class="dropdown-item" href="documents-user-manual.html"><i class="bi bi-book me-2"></i> User Manual</a></li>
+              <li><a class="dropdown-item" href="documents-studies.html"><i class="bi bi-journal-text me-2"></i> Studies</a></li>
+              <li><a class="dropdown-item" href="documents-guidelines.html"><i class="bi bi-file-earmark-ruled me-2"></i> Guidelines</a></li>
+              <li><a class="dropdown-item" href="documents-house-typology.html"><i class="bi bi-building me-2"></i> House Typology</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Media
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="media-photos.html"><i class="bi bi-images me-2"></i> Photos</a></li>
+              <li><a class="dropdown-item" href="media-publications.html"><i class="bi bi-newspaper me-2"></i> Gaon Vikas Ki Ore</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Connect
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="contact-us.html"><i class="bi bi-telephone me-2"></i> Contact Us</a></li>
+              <li><a class="dropdown-item" href="directory.html"><i class="bi bi-person-lines-fill me-2"></i> Official Directory</a></li>
+              <li><a class="dropdown-item" href="grievance.html"><i class="bi bi-shield-exclamation me-2"></i> Grievance Redressal</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-2">
+          <a href="index.html" class="btn btn-outline-light btn-sm px-3" title="Switch to Gateway">
+            <i class="bi bi-arrow-left-right me-1"></i> Citizen View
+          </a>
+          <button class="btn btn-warning btn-sm fw-semibold px-3" data-bs-toggle="modal" data-bs-target="#officialLoginModal">
+            <i class="bi bi-box-arrow-in-right me-1"></i> Official Login
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- Carousel Hero Section -->
+    <section class="position-relative">
+      <div id="pmaygOfficialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#pmaygOfficialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#pmaygOfficialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#pmaygOfficialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/official-hero-banner.png" class="d-block w-100" alt="PMAY-G Scheme Banner" style="max-height: 480px; object-fit: cover;">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/landing-hero.png" class="d-block w-100" alt="Rural Housing Transformation" style="max-height: 480px; object-fit: cover;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#pmaygOfficialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#pmaygOfficialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Announcement Marquee Bar -->
+    <section class="announcement-bar">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center flex-grow-1 overflow-hidden me-3">
+          <span class="announcement-badge">
+            <i class="bi bi-megaphone-fill"></i> Announcement
+          </span>
+          <marquee id="announcement-ticker" class="announcement-content" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+            PMAY-G introduces Rural Mason Training— register today to develop construction skills and explore employment opportunities. &nbsp;&nbsp;|&nbsp;&nbsp; FY 2024-25 Phase II Targets uploaded on the monitoring MIS.
+          </marquee>
+        </div>
+        <div>
+          <button id="ticker-pause-btn" class="btn btn-sm btn-outline-secondary py-0 px-2" title="Pause announcements" aria-label="Pause announcements">
+            <i class="bi bi-pause-fill"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PMAY-G in Numbers Section -->
+    <section class="pmayg-numbers-section">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 gap-2">
+          <div>
+            <h2 class="h3 fw-bold text-dark mb-1">PMAY-G in Numbers</h2>
+            <p class="text-muted small mb-0">Nationwide Cumulative Physical & Financial Progress</p>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <ul class="nav nav-pills" id="numbersTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active py-1 px-3 small" id="pmayg1-tab" data-bs-toggle="pill" data-bs-target="#pmayg1-content" type="button" role="tab">PMAYG 1.0</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link py-1 px-3 small" id="pmayg2-tab" data-bs-toggle="pill" data-bs-target="#pmayg2-content" type="button" role="tab">PMAYG 2.0</button>
+              </li>
+            </ul>
+            <a href="documents-reports.html" class="section-view-all">
+              <span>View full Analytics</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="tab-content" id="numbersTabContent">
+          <div class="tab-pane fade show active" id="pmayg1-content" role="tabpanel">
+            <div class="row g-4">
+              <!-- KPI 1 -->
+              <div class="col-lg-3 col-sm-6">
+                <div class="kpi-card">
+                  <div class="kpi-card-header">
+                    <span class="kpi-card-label">MoRD TARGET</span>
+                    <i class="bi bi-graph-up-arrow text-primary fs-5"></i>
+                  </div>
+                  <div class="kpi-card-value">4,09,43,907</div>
+                  <div class="kpi-card-sub text-success">
+                    <i class="bi bi-arrow-up-short"></i> +2.4% Houses Target
+                  </div>
+                </div>
+              </div>
+
+              <!-- KPI 2 -->
+              <div class="col-lg-3 col-sm-6">
+                <div class="kpi-card">
+                  <div class="kpi-card-header">
+                    <span class="kpi-card-label">SANCTIONED</span>
+                    <i class="bi bi-check-circle-fill text-info fs-5"></i>
+                  </div>
+                  <div class="kpi-card-value">3,20,82,202</div>
+                  <div class="kpi-card-sub text-success">
+                    <i class="bi bi-arrow-up-short"></i> +2.4% Houses Approved
+                  </div>
+                </div>
+              </div>
+
+              <!-- KPI 3 -->
+              <div class="col-lg-3 col-sm-6">
+                <div class="kpi-card">
+                  <div class="kpi-card-header">
+                    <span class="kpi-card-label">COMPLETED</span>
+                    <i class="bi bi-house-check-fill text-success fs-5"></i>
+                  </div>
+                  <div class="kpi-card-value">2,66,80,510</div>
+                  <div class="kpi-card-sub text-success">
+                    <i class="bi bi-arrow-up-short"></i> +2.4% Houses Delivered
+                  </div>
+                </div>
+              </div>
+
+              <!-- KPI 4 -->
+              <div class="col-lg-3 col-sm-6">
+                <div class="kpi-card">
+                  <div class="kpi-card-header">
+                    <span class="kpi-card-label">FUNDS TRANSFERRED</span>
+                    <i class="bi bi-currency-rupee text-warning fs-5"></i>
+                  </div>
+                  <div class="kpi-card-value">₹ 3,42,180 Cr</div>
+                  <div class="kpi-card-sub text-success">
+                    <i class="bi bi-arrow-up-short"></i> +3.1% Direct Benefit Transfer
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="pmayg2-content" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="kpi-card">
+                  <div class="kpi-card-header">
+                    <span class="kpi-card-label">PHASE 2 TARGET</span>
+                    <i class="bi bi-graph-up-arrow text-primary fs-5"></i>
+                  </div>
+                  <div class="kpi-card-value">2,00,00,000</div>
+                  <div class="kpi-card-sub text-primary">FY 2024-25 to 2028-29</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="kpi-card">
+                  <div class="kpi-card-header">
+                    <span class="kpi-card-label">INITIAL SANCTIONS</span>
+                    <i class="bi bi-check-circle-fill text-info fs-5"></i>
+                  </div>
+                  <div class="kpi-card-value">48,20,150</div>
+                  <div class="kpi-card-sub text-success">+ 4.1% MoM</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="kpi-card">
+                  <div class="kpi-card-header">
+                    <span class="kpi-card-label">IN PROGRESS</span>
+                    <i class="bi bi-cone-striped text-warning fs-5"></i>
+                  </div>
+                  <div class="kpi-card-value">36,12,400</div>
+                  <div class="kpi-card-sub text-muted">Geotagged L1/L2</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="kpi-card">
+                  <div class="kpi-card-header">
+                    <span class="kpi-card-label">DISBURSED</span>
+                    <i class="bi bi-currency-rupee text-warning fs-5"></i>
+                  </div>
+                  <div class="kpi-card-value">₹ 58,400 Cr</div>
+                  <div class="kpi-card-sub text-success">Via FTO / PFMS</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Documents & Circulars Split Section -->
+    <section class="home-section">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Documents Column -->
+          <div class="col-lg-7">
+            <div class="section-header-wrap">
+              <h2 class="section-title">
+                <i class="bi bi-folder2-open text-primary"></i> Documents & Resources
+              </h2>
+              <a href="documents-guidelines.html" class="section-view-all">
+                <span>See All Documents</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <a href="documents-user-manual.html" class="doc-card">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h3 class="doc-card-title">User Manual</h3>
+                    <i class="bi bi-arrow-right-short text-primary fs-4"></i>
+                  </div>
+                  <p class="doc-card-desc">Comprehensive step-by-step guides for AwaasSoft, mobile app geotagging, and beneficiary verification.</p>
+                  <div class="doc-card-footer">
+                    <span><i class="bi bi-file-earmark-pdf me-1"></i> PDF Guide</span>
+                    <span class="text-primary fw-medium">Access &rarr;</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-sm-6">
+                <a href="documents-studies.html" class="doc-card">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h3 class="doc-card-title">Studies & Research</h3>
+                    <i class="bi bi-arrow-right-short text-primary fs-4"></i>
+                  </div>
+                  <p class="doc-card-desc">Independent socio-economic evaluation reports and rural housing impact assessments.</p>
+                  <div class="doc-card-footer">
+                    <span><i class="bi bi-journal-check me-1"></i> Research</span>
+                    <span class="text-primary fw-medium">Access &rarr;</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-sm-6">
+                <a href="documents-guidelines.html" class="doc-card">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h3 class="doc-card-title">Framework Guidelines</h3>
+                    <i class="bi bi-arrow-right-short text-primary fs-4"></i>
+                  </div>
+                  <p class="doc-card-desc">Official program implementation manual, financial norms, and administrative guidelines.</p>
+                  <div class="doc-card-footer">
+                    <span><i class="bi bi-card-checklist me-1"></i> Framework</span>
+                    <span class="text-primary fw-medium">Access &rarr;</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-sm-6">
+                <a href="documents-house-typology.html" class="doc-card">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h3 class="doc-card-title">House Typology</h3>
+                    <i class="bi bi-arrow-right-short text-primary fs-4"></i>
+                  </div>
+                  <p class="doc-card-desc">Region-specific disaster-resilient house layout designs and sustainable vernacular materials.</p>
+                  <div class="doc-card-footer">
+                    <span><i class="bi bi-house me-1"></i> 140+ Designs</span>
+                    <span class="text-primary fw-medium">Access &rarr;</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Circulars & Notifications Column -->
+          <div class="col-lg-5">
+            <div class="section-header-wrap">
+              <h2 class="section-title">
+                <i class="bi bi-bell text-warning"></i> Latest Circulars
+              </h2>
+              <a href="documents-guidelines.html" class="section-view-all">
+                <span>View All</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="list-group list-group-flush border rounded-3 p-2 bg-white shadow-sm">
+              <a href="documents-guidelines.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex w-100 justify-content-between text-muted small mb-1">
+                  <span class="badge bg-primary-subtle text-primary fw-semibold">MoRD Circular</span>
+                  <span>10.07.2026</span>
+                </div>
+                <h3 class="h6 mb-1 text-dark fw-bold">Implementation of PMAY-G during FY 2024-25 to 2028-29</h3>
+                <p class="mb-0 text-muted small">Modifications in the next phase of the scheme, revised unit cost norms and timeline.</p>
+              </a>
+
+              <a href="documents-guidelines.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex w-100 justify-content-between text-muted small mb-1">
+                  <span class="badge bg-success-subtle text-success fw-semibold">MIS Advisory</span>
+                  <span>24.06.2026</span>
+                </div>
+                <h3 class="h6 mb-1 text-dark fw-bold">Mandatory Geotagging verification before 2nd installment release</h3>
+                <p class="mb-0 text-muted small">Advisory regarding AwaasApp inspection workflows for Block Development Officers.</p>
+              </a>
+
+              <a href="documents-guidelines.html" class="list-group-item list-group-item-action py-3">
+                <div class="d-flex w-100 justify-content-between text-muted small mb-1">
+                  <span class="badge bg-warning-subtle text-dark fw-semibold">Capacity Building</span>
+                  <span>12.06.2026</span>
+                </div>
+                <h3 class="h6 mb-1 text-dark fw-bold">Rural Mason Training and Certification Program 2026-27</h3>
+                <p class="mb-0 text-muted small">Schedule of training camps conducted across rural district polytechnics.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Media Highlights -->
+    <section class="py-5 bg-light border-top">
+      <div class="container">
+        <div class="section-header-wrap">
+          <div>
+            <h2 class="section-title">Media & Stories from the Ground</h2>
+            <p class="text-muted small mb-0">Transforming rural lives across India</p>
+          </div>
+          <div class="d-flex gap-3">
+            <a href="media-photos.html" class="btn btn-outline-primary btn-sm">Photo Gallery</a>
+            <a href="media-publications.html" class="btn btn-primary btn-sm">Gaon Vikas Ki Ore</a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="assets/images/citizen-card.png" class="card-img-top" alt="Completed PMAY-G Home in Madhya Pradesh" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <span class="badge bg-success-subtle text-success mb-2">Success Story</span>
+                <h3 class="card-title h6 fw-bold">Empowering Women Homeowners in Sehore District</h3>
+                <p class="card-text text-muted small">Joint ownership under PMAY-G provides financial dignity and secure shelter to rural families.</p>
+                <a href="media-photos.html" class="fw-semibold text-primary small text-decoration-none">View Photos &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="assets/images/landing-hero.png" class="card-img-top" alt="Cluster Housing Initiative" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <span class="badge bg-primary-subtle text-primary mb-2">Newsletter Feature</span>
+                <h3 class="card-title h6 fw-bold">Gaon Vikas Ki Ore - Special Edition</h3>
+                <p class="card-text text-muted small">In-depth feature on the convergence of Swachh Bharat toilets, Jal Jeevan Mission, and Solar lighting.</p>
+                <a href="media-publications.html" class="fw-semibold text-primary small text-decoration-none">Read Publication &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="assets/images/official-card.png" class="card-img-top" alt="Review Meeting" style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <span class="badge bg-warning-subtle text-dark mb-2">Governance</span>
+                <h3 class="card-title h6 fw-bold">National Review Meeting on Phase-II Rollout</h3>
+                <p class="card-text text-muted small">Hon'ble Union Minister chairs high-level progress meeting with State Principal Secretaries.</p>
+                <a href="about-us.html" class="fw-semibold text-primary small text-decoration-none">Read About Us &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partner Logos Strip -->
+    <section class="partners-strip">
+      <div class="container">
+        <div class="row align-items-center justify-content-center g-3 text-center">
+          <div class="col-6 col-md-3 col-lg-2 partner-logo-item">
+            <img src="assets/images/partner-mo-rural.png" alt="Ministry of Rural Development">
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 partner-logo-item">
+            <img src="assets/images/partner-panchayati.png" alt="Ministry of Panchayati Raj">
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 partner-logo-item">
+            <img src="assets/images/partner-mord.png" alt="MoRD Schemes">
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 partner-logo-item">
+            <img src="assets/images/partner-india-gov.png" alt="National Portal of India">
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 partner-logo-item">
+            <img src="assets/images/pmayg-logo.png" alt="PMAYG Portal">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Official Login Modal -->
+  <div class="modal fade" id="officialLoginModal" tabindex="-1" aria-labelledby="officialLoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h2 class="modal-title fs-5" id="officialLoginModalLabel">
+            <i class="bi bi-shield-lock-fill me-2"></i> PMAY-G Official Login
+          </h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form id="officialLoginForm">
+            <div class="mb-3">
+              <label for="userRole" class="form-label fw-semibold">Select Administrative Level</label>
+              <select class="form-select" id="userRole" required>
+                <option value="">-- Choose Role / Level --</option>
+                <option value="mord">Ministry of Rural Development (MoRD)</option>
+                <option value="state">State Nodal Officer (SNO)</option>
+                <option value="district">District Collector / DDO</option>
+                <option value="block">Block Development Officer (BDO)</option>
+                <option value="gp">Gram Panchayat Official / Sachiv</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="officialUserId" class="form-label fw-semibold">Official User ID / Email</label>
+              <input type="text" class="form-control" id="officialUserId" placeholder="e.g. officer.id@gov.in" required>
+            </div>
+            <div class="mb-3">
+              <label for="officialPassword" class="form-label fw-semibold">Password</label>
+              <input type="password" class="form-control" id="officialPassword" required>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="rememberMe">
+              <label class="form-check-label small" for="rememberMe">Remember my login ID</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold">Sign In to Dashboard</button>
+          </form>
+        </div>
+        <div class="modal-footer bg-light justify-content-between">
+          <a href="#" class="small text-decoration-none">Forgot Password?</a>
+          <a href="contact-us.html" class="small text-decoration-none">Helpdesk Support</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Government Footer -->
+  <footer class="pmayg-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <h3 class="footer-heading">Useful Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="official-home.html"><i class="bi bi-chevron-right text-warning"></i> Official Portal Home</a></li>
+            <li><a href="about-us.html"><i class="bi bi-chevron-right text-warning"></i> About Department</a></li>
+            <li><a href="stakeholders.html"><i class="bi bi-chevron-right text-warning"></i> Government Stakeholders</a></li>
+            <li><a href="documents-guidelines.html"><i class="bi bi-chevron-right text-warning"></i> PMAY-G Guidelines</a></li>
+            <li><a href="documents-reports.html"><i class="bi bi-chevron-right text-warning"></i> Progress & Analytics Reports</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h3 class="footer-heading">Website Policies</h3>
+          <ul class="footer-links-list">
+            <li><a href="#"><i class="bi bi-chevron-right text-warning"></i> Terms & Conditions</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right text-warning"></i> Website Policies</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right text-warning"></i> Accessibility Statement</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right text-warning"></i> Sitemap</a></li>
+            <li><a href="grievance.html"><i class="bi bi-chevron-right text-warning"></i> Grievance Redressal</a></li>
+            <li><a href="contact-us.html"><i class="bi bi-chevron-right text-warning"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h3 class="footer-heading">Connect with Us</h3>
+          <p class="text-secondary small mb-2">Subscribe for scheme updates and notifications.</p>
+          <div class="footer-social-icons">
+            <a href="#" class="footer-social-link" title="Facebook" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="Facebook" width="18"></a>
+            <a href="#" class="footer-social-link" title="YouTube" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="YouTube" width="18"></a>
+            <a href="#" class="footer-social-link" title="X (Twitter)" aria-label="Twitter"><img src="assets/icons/x-twitter.svg" alt="Twitter" width="18"></a>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 mt-4">
+            <img src="assets/images/digital-india.png" alt="Digital India" class="footer-badge-img">
+            <img src="assets/images/nic-logo.png" alt="National Informatics Centre" class="footer-badge-img">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <div>
+          This Website belongs to Department of Rural Development, Ministry of Rural Development, Government of India.
+        </div>
+        <div>
+          Last updated on: 10.07.2026
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
