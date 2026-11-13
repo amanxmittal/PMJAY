@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beneficiary Services & Login - PMAY-G</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="beneficiary-portal">
+
+  <!-- Accessibility Top Bar -->
+  <div class="top-accessibility-bar py-1">
+    <div class="container-fluid px-lg-5">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-3">
+          <a href="#main-content" class="skip-link">Skip to main content</a>
+          <span class="text-muted d-none d-md-inline">|</span>
+          <span class="d-none d-md-inline text-muted">Government of India | Ministry of Rural Development</span>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <div class="btn-group btn-group-sm font-resizer" role="group" aria-label="Font sizing">
+            <button type="button" class="btn btn-outline-secondary" id="font-decrease" title="Decrease Font">A-</button>
+            <button type="button" class="btn btn-outline-secondary" id="font-normal" title="Normal Font">A</button>
+            <button type="button" class="btn btn-outline-secondary" id="font-increase" title="Increase Font">A+</button>
+          </div>
+          <button type="button" class="btn btn-sm btn-outline-secondary ms-1" id="contrast-toggle" title="Toggle High Contrast">
+            <img src="assets/icons/accessibility.svg" alt="" width="14" height="14">
+            <span class="d-none d-sm-inline ms-1">Contrast</span>
+          </button>
+          <div class="dropdown">
+            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              <img src="assets/icons/translate.svg" alt="" width="14" height="14" class="me-1">
+              English
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item active" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">हिन्दी (Hindi)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header with Logos & Search -->
+  <header class="main-header py-2 bg-white border-bottom">
+    <div class="container-fluid px-lg-5">
+      <div class="row align-items-center gy-2">
+        <div class="col-12 col-md-6 col-lg-5 d-flex align-items-center gap-3">
+          <a href="beneficiary-home.html" class="d-flex align-items-center text-decoration-none text-dark">
+            <img src="assets/images/emblem-goi.png" alt="Emblem of India" class="brand-emblem-img me-2">
+            <div class="brand-text-block">
+              <div class="brand-govt-title">GOVERNMENT OF INDIA</div>
+              <div class="brand-dept-title">DEPARTMENT OF RURAL DEVELOPMENT</div>
+              <div class="brand-dept-title fw-bold text-primary">MINISTRY OF RURAL DEVELOPMENT</div>
+            </div>
+          </a>
+          <div class="vr mx-2 d-none d-sm-block"></div>
+          <a href="beneficiary-home.html">
+            <img src="assets/images/pmayg-logo.png" alt="PMAY-G Logo" class="brand-pmayg-logo">
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-7 d-flex align-items-center justify-content-md-end gap-3">
+          <form class="header-search-form flex-grow-1 flex-md-grow-0" role="search" onsubmit="event.preventDefault();">
+            <input class="form-control" type="search" placeholder="Search services..." aria-label="Search">
+            <button class="btn btn-search" type="submit" aria-label="Search Submit">
+              <img src="assets/icons/search.svg" alt="Search" width="16" height="16">
+            </button>
+          </form>
+
+          <div class="header-utility-icons d-flex align-items-center gap-2">
+            <a href="#" class="utility-icon-btn" title="Notifications" aria-label="Notifications">
+              <img src="assets/icons/bell.svg" alt="Bell" width="18" height="18">
+            </a>
+            <a href="official-home.html" class="btn btn-sm btn-outline-primary d-none d-lg-inline-flex align-items-center gap-1" title="Switch to Official Portal">
+              <span>Official Portal</span>
+              <img src="assets/icons/arrow-right.svg" alt="" width="14" height="14">
+            </a>
+            <a href="beneficiary-details-personal.html" class="btn btn-sm btn-primary d-inline-flex align-items-center gap-1" title="I am a Beneficiary">
+              <img src="assets/icons/user-circle.svg" alt="" width="16" height="16">
+              <span>I am a Beneficiary</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Beneficiary Navbar -->
+  <nav class="navbar navbar-expand-lg official-navbar sticky-top">
+    <div class="container-fluid px-lg-5">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#beneficiaryNav" aria-controls="beneficiaryNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="beneficiaryNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="beneficiary-home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="beneficiary-about-us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="beneficiary-how-it-works.html">How it Works?</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Documents
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="beneficiary-documents-user-manual.html">User Manual</a></li>
+              <li><a class="dropdown-item" href="beneficiary-documents-house-typology.html">House Typology</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Media
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="beneficiary-media-photos.html">Photos</a></li>
+              <li><a class="dropdown-item" href="beneficiary-media-publications.html">Gaon Vikas Ki Ore</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="beneficiary-faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="beneficiary-contact-us.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="beneficiary-services.html">Beneficiary Services</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center">
+          <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-semibold">
+            Toll-Free Helpline: 1800-11-6446
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb Bar -->
+  <div class="bg-light py-2 border-bottom">
+    <div class="container-fluid px-lg-5">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0 small">
+          <li class="breadcrumb-item"><a href="beneficiary-home.html" class="text-decoration-none">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Beneficiary Services & Login</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main-content" class="py-5">
+    <div class="container-fluid px-lg-5">
+      <div class="row g-4 justify-content-center">
+        <!-- Beneficiary Login / Search Form Card -->
+        <div class="col-lg-5 col-md-8">
+          <div class="card border-0 shadow rounded-4 p-4 p-md-5 bg-white">
+            <div class="text-center mb-4">
+              <div class="action-card-icon-wrap mx-auto mb-3" style="width: 64px; height: 64px; background: #e0f2fe;">
+                <img src="assets/icons/user-circle.svg" alt="" width="36" height="36">
+              </div>
+              <h2 class="h3 fw-bold text-dark mb-1">Login to your Account</h2>
+              <p class="text-muted small">Enter your registration details to view house inspection photos and payment installments.</p>
+            </div>
+
+            <!-- Login Form -->
+            <form action="beneficiary-details-personal.html" method="GET">
+              <div class="mb-3">
+                <label for="stateSelect" class="form-label small fw-bold">State <span class="text-danger">*</span></label>
+                <select class="form-select" id="stateSelect" required>
+                  <option value="" disabled selected>Select the state where your house is located</option>
+                  <option value="chhattisgarh" selected>Chhattisgarh</option>
+                  <option value="bihar">Bihar</option>
+                  <option value="madhya_pradesh">Madhya Pradesh</option>
+                  <option value="uttar_pradesh">Uttar Pradesh</option>
+                  <option value="odisha">Odisha</option>
+                  <option value="rajasthan">Rajasthan</option>
+                  <option value="west_bengal">West Bengal</option>
+                  <option value="jharkhand">Jharkhand</option>
+                  <option value="assam">Assam</option>
+                </select>
+                <div class="form-text small">Select the state where your house is located</div>
+              </div>
+
+              <div class="mb-4">
+                <div class="d-flex justify-content-between align-items-center">
+                  <label for="regIdInput" class="form-label small fw-bold">Registration ID <span class="text-danger">*</span></label>
+                  <a href="#" class="small text-decoration-none text-primary" data-bs-toggle="tooltip" title="Find your Registration ID on your sanction order letter, or ask your Gram Rozgar Sahayak (GRS).">
+                    Where can I find it?
+                  </a>
+                </div>
+                <input type="text" class="form-control" id="regIdInput" value="CH150625807" required placeholder="Enter your Registration ID (e.g. CH150625807)">
+              </div>
+
+              <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-primary btn-lg fw-bold">
+                  View Beneficiary Details &rarr;
+                </button>
+              </div>
+
+              <div class="text-center">
+                <span class="small text-muted">Don't have your registration ID?</span>
+                <a href="beneficiary-how-it-works.html#step1" class="small text-primary fw-bold text-decoration-none ms-1">
+                  Check Eligibility
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Prime Minister's Quote & Quick Guidance -->
+        <div class="col-lg-6 col-md-8">
+          <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-4 text-white" style="background: linear-gradient(135deg, #0f2c59 0%, #154374 100%);">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="rounded-circle bg-warning text-dark d-flex align-items-center justify-content-center fw-bold" style="width: 48px; height: 48px; font-size: 1.25rem;">
+                PM
+              </div>
+              <div>
+                <h5 class="fw-bold mb-0 text-white">Narendra Modi</h5>
+                <div class="text-warning small">Hon'ble Prime Minister of India</div>
+              </div>
+            </div>
+            <p class="fs-5 fst-italic mb-0" style="line-height: 1.6;">
+              “Our goal is that every poor family should have a pucca house, a secure roof, and a life of dignity.”
+            </p>
+          </div>
+
+          <!-- Quick Services Cards List -->
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <a href="beneficiary-about-us.html" class="text-decoration-none">
+                <div class="card h-100 border-0 shadow-sm p-3 rounded-3 bg-white hover-shadow transition">
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="assets/images/pmayg-logo.png" alt="" width="36" height="36">
+                    <div>
+                      <div class="fw-bold text-dark small">What is PMAY-G?</div>
+                      <div class="text-muted small">Learn scheme mandate</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-6">
+              <a href="beneficiary-how-it-works.html#check-eligibility" class="text-decoration-none">
+                <div class="card h-100 border-0 shadow-sm p-3 rounded-3 bg-white hover-shadow transition">
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="assets/images/preferable.png" alt="" width="36" height="36">
+                    <div>
+                      <div class="fw-bold text-dark small">Check Your Eligibility</div>
+                      <div class="text-muted small">13 exclusion rules</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-6">
+              <a href="beneficiary-how-it-works.html#registration-process" class="text-decoration-none">
+                <div class="card h-100 border-0 shadow-sm p-3 rounded-3 bg-white hover-shadow transition">
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="assets/images/registration.png" alt="" width="36" height="36">
+                    <div>
+                      <div class="fw-bold text-dark small">Get Registered</div>
+                      <div class="text-muted small">Gram Sabha process</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-6">
+              <a href="beneficiary-details-journey.html" class="text-decoration-none">
+                <div class="card h-100 border-0 shadow-sm p-3 rounded-3 bg-white hover-shadow transition">
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="assets/images/construction.png" alt="" width="36" height="36">
+                    <div>
+                      <div class="fw-bold text-dark small">Track House Progress</div>
+                      <div class="text-muted small">Geotag inspections</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Gov of India Footer -->
+  <footer class="official-footer text-light pt-5 pb-3">
+    <div class="container-fluid px-lg-5">
+      <div class="row g-4 mb-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="assets/images/emblem-goi.png" alt="Emblem" height="42">
+            <div>
+              <div class="fw-bold text-white fs-6">PRADHAN MANTRI AWAAS YOJANA - GRAMIN</div>
+              <div class="text-muted small">Department of Rural Development, Ministry of Rural Development</div>
+            </div>
+          </div>
+          <p class="text-muted small">
+            Empowering rural households across India by ensuring access to safe, durable pucca housing equipped with basic amenities.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://facebook.com" class="text-light" target="_blank" rel="noopener" aria-label="Facebook">
+              <img src="assets/icons/facebook.svg" alt="Facebook" width="20" height="20">
+            </a>
+            <a href="https://twitter.com" class="text-light" target="_blank" rel="noopener" aria-label="X Twitter">
+              <img src="assets/icons/x-twitter.svg" alt="Twitter" width="20" height="20">
+            </a>
+            <a href="https://youtube.com" class="text-light" target="_blank" rel="noopener" aria-label="YouTube">
+              <img src="assets/icons/youtube.svg" alt="YouTube" width="20" height="20">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h6 class="fw-bold text-warning mb-3">USEFUL LINKS</h6>
+          <ul class="list-unstyled footer-links small">
+            <li><a href="beneficiary-home.html">Home</a></li>
+            <li><a href="beneficiary-about-us.html">About Us</a></li>
+            <li><a href="beneficiary-how-it-works.html">How it Works?</a></li>
+            <li><a href="beneficiary-documents-user-manual.html">User Manuals</a></li>
+            <li><a href="beneficiary-documents-house-typology.html">House Typologies</a></li>
+            <li><a href="beneficiary-faq.html">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h6 class="fw-bold text-warning mb-3">PORTAL POLICIES</h6>
+          <ul class="list-unstyled footer-links small">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Website Policies</a></li>
+            <li><a href="#">Accessibility Statement</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="beneficiary-contact-us.html">Feedback</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h6 class="fw-bold text-warning mb-3">HELPLINE & PARTNERS</h6>
+          <div class="mb-3">
+            <div class="text-white fw-bold">Toll-Free Helpline:</div>
+            <div class="text-warning fs-5 fw-bold">1800-11-6446</div>
+            <div class="text-muted small">support-pmayg@gov.in</div>
+          </div>
+          <div class="d-flex align-items-center gap-3 bg-dark p-2 rounded">
+            <img src="assets/images/nic-logo.png" alt="NIC Logo" height="32">
+            <img src="assets/images/digital-india.png" alt="Digital India Logo" height="28">
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-4">
+
+      <div class="row align-items-center small text-muted">
+        <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+          This Website belongs to Department of Rural Development, Government of India.
+          <br>
+          Designed, Developed and Hosted by <strong>National Informatics Centre (NIC)</strong>.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <span>Last Updated On: <strong>10.07.2026</strong></span>
+          <span class="mx-2">|</span>
+          <span>Visitors: <strong>1,33,490</strong></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

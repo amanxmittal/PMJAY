@@ -29,3 +29,4 @@ curl -s -L -o assets/icons/youtube.svg "https://www.figma.com/api/mcp/asset/b082
 curl -s -L -o assets/icons/x-twitter.svg "https://www.figma.com/api/mcp/asset/ee669a4d-5e92-4375-85dc-94a5ba8d89ee.svg"
 
 echo "Assets download complete."
+

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions (FAQ) - Beneficiary Portal - PMAY-G</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="beneficiary-portal">
+
+  <!-- Accessibility Top Bar -->
+  <div class="top-accessibility-bar py-1">
+    <div class="container-fluid px-lg-5">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-3">
+          <a href="#main-content" class="skip-link">Skip to main content</a>
+          <span class="text-muted d-none d-md-inline">|</span>
+          <span class="d-none d-md-inline text-muted">Government of India | Ministry of Rural Development</span>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <div class="btn-group btn-group-sm font-resizer" role="group" aria-label="Font sizing">
+            <button type="button" class="btn btn-outline-secondary" id="font-decrease" title="Decrease Font">A-</button>
+            <button type="button" class="btn btn-outline-secondary" id="font-normal" title="Normal Font">A</button>
+            <button type="button" class="btn btn-outline-secondary" id="font-increase" title="Increase Font">A+</button>
+          </div>
+          <button type="button" class="btn btn-sm btn-outline-secondary ms-1" id="contrast-toggle" title="Toggle High Contrast">
+            <img src="assets/icons/accessibility.svg" alt="" width="14" height="14">
+            <span class="d-none d-sm-inline ms-1">Contrast</span>
+          </button>
+          <div class="dropdown">
+            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              <img src="assets/icons/translate.svg" alt="" width="14" height="14" class="me-1">
+              English
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item active" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">हिन्दी (Hindi)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header with Logos & Search -->
+  <header class="main-header py-2 bg-white border-bottom">
+    <div class="container-fluid px-lg-5">
+      <div class="row align-items-center gy-2">
+        <div class="col-12 col-md-6 col-lg-5 d-flex align-items-center gap-3">
+          <a href="beneficiary-home.html" class="d-flex align-items-center text-decoration-none text-dark">
+            <img src="assets/images/emblem-goi.png" alt="Emblem of India" class="brand-emblem-img me-2">
+            <div class="brand-text-block">
+              <div class="brand-govt-title">GOVERNMENT OF INDIA</div>
+              <div class="brand-dept-title">DEPARTMENT OF RURAL DEVELOPMENT</div>
+              <div class="brand-dept-title fw-bold text-primary">MINISTRY OF RURAL DEVELOPMENT</div>
+            </div>
+          </a>
+          <div class="vr mx-2 d-none d-sm-block"></div>
+          <a href="beneficiary-home.html">
+            <img src="assets/images/pmayg-logo.png" alt="PMAY-G Logo" class="brand-pmayg-logo">
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-7 d-flex align-items-center justify-content-md-end gap-3">
+          <form class="header-search-form flex-grow-1 flex-md-grow-0" role="search" onsubmit="event.preventDefault();">
+            <input class="form-control" type="search" placeholder="Search questions..." aria-label="Search">
+            <button class="btn btn-search" type="submit" aria-label="Search Submit">
+              <img src="assets/icons/search.svg" alt="Search" width="16" height="16">
+            </button>
+          </form>
+
+          <div class="header-utility-icons d-flex align-items-center gap-2">
+            <a href="#" class="utility-icon-btn" title="Notifications" aria-label="Notifications">
+              <img src="assets/icons/bell.svg" alt="Bell" width="18" height="18">
+            </a>
+            <a href="official-home.html" class="btn btn-sm btn-outline-primary d-none d-lg-inline-flex align-items-center gap-1" title="Switch to Official Portal">
+              <span>Official Portal</span>
+              <img src="assets/icons/arrow-right.svg" alt="" width="14" height="14">
+            </a>
+            <a href="beneficiary-details-personal.html" class="btn btn-sm btn-primary d-inline-flex align-items-center gap-1" title="I am a Beneficiary">
+              <img src="assets/icons/user-circle.svg" alt="" width="16" height="16">
+              <span>I am a Beneficiary</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Beneficiary Navbar -->
+  <nav class="navbar navbar-expand-lg official-navbar sticky-top">
+    <div class="container-fluid px-lg-5">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#beneficiaryNav" aria-controls="beneficiaryNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="beneficiaryNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="beneficiary-home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="beneficiary-about-us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="beneficiary-how-it-works.html">How it Works?</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Documents
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="beneficiary-documents-user-manual.html">User Manual</a></li>
+              <li><a class="dropdown-item" href="beneficiary-documents-house-typology.html">House Typology</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Media
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="beneficiary-media-photos.html">Photos</a></li>
+              <li><a class="dropdown-item" href="beneficiary-media-publications.html">Gaon Vikas Ki Ore</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="beneficiary-faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="beneficiary-contact-us.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="beneficiary-services.html">Beneficiary Services</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center">
+          <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-semibold">
+            Toll-Free Helpline: 1800-11-6446
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb Bar -->
+  <div class="bg-light py-2 border-bottom">
+    <div class="container-fluid px-lg-5">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0 small">
+          <li class="breadcrumb-item"><a href="beneficiary-home.html" class="text-decoration-none">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main-content" class="py-5">
+    <div class="container-fluid px-lg-5">
+      <!-- Title Banner -->
+      <div class="card border-0 shadow-sm rounded-4 p-4 p-lg-5 mb-5 text-white" style="background: linear-gradient(135deg, #154374 0%, #0c3156 100%);">
+        <span class="badge bg-warning text-dark px-3 py-1 rounded-pill mb-2 fw-bold align-self-start">QUESTION & ANSWERS</span>
+        <h1 class="display-5 fw-bold mb-3">Frequently Asked Questions</h1>
+        <p class="lead mb-0" style="opacity: 0.95; max-width: 800px;">
+          Find answers to common queries regarding beneficiary eligibility, SECC list prioritization, installment transfers, geotagging, and Grievance Redressal.
+        </p>
+      </div>
+
+      <!-- FAQ Accordion List -->
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="accordion faq-accordion" id="beneficiaryMainFaq">
+            <!-- Q1 -->
+            <div class="accordion-item shadow-sm">
+              <h2 class="accordion-header" id="faq1Header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                  How can beneficiaries monitor their application and installment status online?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1Header" data-bs-parent="#beneficiaryMainFaq">
+                <div class="accordion-body">
+                  Beneficiaries can visit the <strong>"I am a Beneficiary"</strong> section on this portal or use the <strong>AwaasApp</strong> mobile application. By entering their State, District, Block, Panchayat, or <strong>PMAY-G Registration ID</strong> (e.g. <code>CH150625807</code>), they can view real-time status of their sanction order, bank verification, geotagged inspection photos, and DBT installment payment dates.
+                </div>
+              </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="accordion-item shadow-sm">
+              <h2 class="accordion-header" id="faq2Header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                  What happens if my name is not on the SECC 2011 priority list?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2Header" data-bs-parent="#beneficiaryMainFaq">
+                <div class="accordion-body">
+                  If your household was omitted from the SECC 2011 list, the Ministry introduced the <strong>Awaas+ database</strong> to capture left-out deserving households. Gram Panchayats verify eligibility, and Gram Sabhas pass formal resolutions before submitting the updated priority list to the Block Development Officer (BDO).
+                </div>
+              </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="accordion-item shadow-sm">
+              <h2 class="accordion-header" id="faq3Header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                  How to apply for PMAY-G financial assistance?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3Header" data-bs-parent="#beneficiaryMainFaq">
+                <div class="accordion-body">
+                  PMAY-G does not require complex paperwork or application fees. Eligible families are enrolled by local Gram Rozgar Sahayaks (GRS) and Ward members during Gram Sabha meetings. You need to provide your <strong>Aadhaar card</strong>, active <strong>bank account passbook</strong>, job card (for MGNREGA wages), and consent form for geotagging.
+                </div>
+              </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="accordion-item shadow-sm">
+              <h2 class="accordion-header" id="faq4Header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                  Who is eligible for the PMAY-G scheme?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4Header" data-bs-parent="#beneficiaryMainFaq">
+                <div class="accordion-body">
+                  Rural households living in kutcha houses (dilapidated thatched or mud houses with zero, one, or two rooms) or homeless families as per SECC 2011 and Awaas+ surveys. Priority is accorded to Scheduled Castes, Scheduled Tribes, Minorities, widows, physically challenged persons, and primitive tribal groups.
+                </div>
+              </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="accordion-item shadow-sm">
+              <h2 class="accordion-header" id="faq5Header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                  How much financial assistance is provided and in how many installments?
+                </button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faq5Header" data-bs-parent="#beneficiaryMainFaq">
+                <div class="accordion-body">
+                  In plain areas, the total assistance is <strong>₹1,20,000</strong> per unit, and in hilly states/difficult areas/IAP districts, it is <strong>₹1,30,000</strong>. It is disbursed in 3 or 4 installments:
+                  <ul class="mt-2 mb-0">
+                    <li><strong>1st Installment (around ₹40,000)</strong>: Upon sanction order and proposed site geotagging.</li>
+                    <li><strong>2nd Installment (around ₹40,000 to ₹50,000)</strong>: Upon plinth level construction verification.</li>
+                    <li><strong>3rd Installment (around ₹30,000 to ₹40,000)</strong>: Upon lintel/roof casting inspection.</li>
+                  </ul>
+                  Additionally, ₹12,000 is credited for toilet construction under SBM and 90–95 days of wage employment is paid under MGNREGA.
+                </div>
+              </div>
+            </div>
+
+            <!-- Q6 -->
+            <div class="accordion-item shadow-sm">
+              <h2 class="accordion-header" id="faq6Header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                  What should I do if my bank account is rejected by PFMS?
+                </button>
+              </h2>
+              <div id="faq6" class="accordion-collapse collapse" aria-labelledby="faq6Header" data-bs-parent="#beneficiaryMainFaq">
+                <div class="accordion-body">
+                  If the Public Financial Management System (PFMS) flags your account due to an invalid IFSC, name mismatch, or inactive Aadhaar seeding, visit your bank branch immediately to ensure NPCI Aadhaar mapping is active. Submit the updated passbook copy to your Panchayat Secretary or Block Administrator to re-validate on AwaasSoft.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Gov of India Footer -->
+  <footer class="official-footer text-light pt-5 pb-3">
+    <div class="container-fluid px-lg-5">
+      <div class="row g-4 mb-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="assets/images/emblem-goi.png" alt="Emblem" height="42">
+            <div>
+              <div class="fw-bold text-white fs-6">PRADHAN MANTRI AWAAS YOJANA - GRAMIN</div>
+              <div class="text-muted small">Department of Rural Development, Ministry of Rural Development</div>
+            </div>
+          </div>
+          <p class="text-muted small">
+            Empowering rural households across India by ensuring access to safe, durable pucca housing equipped with basic amenities.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://facebook.com" class="text-light" target="_blank" rel="noopener" aria-label="Facebook">
+              <img src="assets/icons/facebook.svg" alt="Facebook" width="20" height="20">
+            </a>
+            <a href="https://twitter.com" class="text-light" target="_blank" rel="noopener" aria-label="X Twitter">
+              <img src="assets/icons/x-twitter.svg" alt="Twitter" width="20" height="20">
+            </a>
+            <a href="https://youtube.com" class="text-light" target="_blank" rel="noopener" aria-label="YouTube">
+              <img src="assets/icons/youtube.svg" alt="YouTube" width="20" height="20">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h6 class="fw-bold text-warning mb-3">USEFUL LINKS</h6>
+          <ul class="list-unstyled footer-links small">
+            <li><a href="beneficiary-home.html">Home</a></li>
+            <li><a href="beneficiary-about-us.html">About Us</a></li>
+            <li><a href="beneficiary-how-it-works.html">How it Works?</a></li>
+            <li><a href="beneficiary-documents-user-manual.html">User Manuals</a></li>
+            <li><a href="beneficiary-documents-house-typology.html">House Typologies</a></li>
+            <li><a href="beneficiary-faq.html">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h6 class="fw-bold text-warning mb-3">PORTAL POLICIES</h6>
+          <ul class="list-unstyled footer-links small">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Website Policies</a></li>
+            <li><a href="#">Accessibility Statement</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="beneficiary-contact-us.html">Feedback</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h6 class="fw-bold text-warning mb-3">HELPLINE & PARTNERS</h6>
+          <div class="mb-3">
+            <div class="text-white fw-bold">Toll-Free Helpline:</div>
+            <div class="text-warning fs-5 fw-bold">1800-11-6446</div>
+            <div class="text-muted small">support-pmayg@gov.in</div>
+          </div>
+          <div class="d-flex align-items-center gap-3 bg-dark p-2 rounded">
+            <img src="assets/images/nic-logo.png" alt="NIC Logo" height="32">
+            <img src="assets/images/digital-india.png" alt="Digital India Logo" height="28">
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-4">
+
+      <div class="row align-items-center small text-muted">
+        <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+          This Website belongs to Department of Rural Development, Government of India.
+          <br>
+          Designed, Developed and Hosted by <strong>National Informatics Centre (NIC)</strong>.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <span>Last Updated On: <strong>10.07.2026</strong></span>
+          <span class="mx-2">|</span>
+          <span>Visitors: <strong>1,33,490</strong></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
